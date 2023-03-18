@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trigger</title>
+</head>
+<body>
+    
+    <center>
+        <h1>trigger</h1>
+        <h3>click the buttons below to see the javascript effect!!</h3>
+        <input type="submit" value="click me to show alert message" onclick="showalert()">
+        <input type="submit" value="click me to show console message" onclick="showconsole()">
+        <input type="submit" value="click me to show html message" onclick="showhtml()">
+        <p id="text"></p>
+    </center>
+
+    <script>
+        function showalert(){
+            alert("hi there! this is an alert message because you click that alert button which calls this function in the alert message");
+        }
+        function showconsole(){
+            console.log("hi this is console message!, called because you click the button")
+        }
+        function showhtml(){
+            // var sentence = "this message"; //version1
+            // document.getElementById("text").innerHTML = sentence;
+            
+            //document.write("ini teks yg mau dipakai"); //version2
+
+            document.getElementById("text").innerHTML = "hello this is text immediately with no variable" //version3
+        }
+    </script>
+
+</body>
+</html>

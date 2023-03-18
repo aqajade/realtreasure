@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concatenation</title>
+</head>
+<body>
+    <h1>concatenation using javascript</h1>
+    <h2>hello, <span id="user"></span> </h2> 
+    <!--kalau mau nyelipin JS didalem elemen pake span, jgn lupa kasih ID-->
+    <script>
+        var username = "reza";
+        var age = 13;
+        var stringconcatenated = `so, you are ${age} years old mr. ${username}, nice!`;
+        document.getElementById("user").innerHTML = username;
+        document.write(`${sentence}`); //versi1
+        document.write(stringconcatenated); //versi2
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create html element using javascript</title>
+</head>
+<body>
+    <h1>this is native h1 element</h1> <!--native artinya asli-->
+    <h1>this is <span id="useJShere">native</span> h1 element</h1>
+
+    <script>
+        document.write("<h1>this is h1 but created using javascript</h1>");
+        document.getElementById("useJShere").innerHTML = "modified by JS";
+        //document.write = write / tulis di dokumen HTML ini
+        //document.getElementById = ambil id dari dokumen HTML ini yg bernama ....
+        //.innerHTML = didalam element HTML nya mau kita ganti jadi .....
+    </script>
+</body>
+</html>
